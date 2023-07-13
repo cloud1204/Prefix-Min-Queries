@@ -1,0 +1,34 @@
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+@subtask samples
+
+manual example-01.in
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+@subtask s1
+@include samples
+gen --type=random --fixr=1 --maxn=1000
+gen --type=random --fixr=1 --minn=200000  
+gen --type=random --fixr=1 --minn=300000
+gen --type=almost_sorted --fixr=1 --maxn=1000
+gen --type=almost_sorted --fixr=1 --minn=200000
+gen --type=almost_sorted --fixr=1 --minn=250000    
+gen --type=almost_sorted --fixr=1 --minn=300000
+gen --type=max_case --fixr=1 --minn=300000
+gen --type=max_case --fixr=1 --minn=280000    
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+@subtask full
+@include samples s1
+gen --type=random --maxn=1000
+gen --type=random --minn=200000  
+gen --type=random --minn=300000
+gen --type=random --maxn=1000
+gen --type=almost_sorted --maxn=1000
+gen --type=almost_sorted --minn=200000
+gen --type=almost_sorted --minn=250000    
+gen --type=almost_sorted --minn=300000     
+gen --type=max_case --minn=300000
+gen --type=max_case --minn=280000
+# # # # # # # # # # # # # # # # # # # # # # # #
