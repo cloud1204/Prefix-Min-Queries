@@ -30,6 +30,10 @@ int32_t main(int32_t argc, char* argv[]) {
 	inf.readSpace();
 	int r = inf.readInt(l, n, "r");
 	inf.readEoln();
+	
+	if (validator.group() == "s1") {
+            assert(r == n);
+    	}
     }
     inf.readEof();
     
