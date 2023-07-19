@@ -3,10 +3,12 @@
 @subtask samples
 
 manual example-01.in
+manual example-02.in
 
 # # # # # # # # # # # # # # # # # # # # # # # #
 
 @subtask s1
+manual example-02.in
 gen --type=random --fixr=1 --maxn=1000
 gen --type=random --fixr=1 --minn=200000  
 gen --type=random --fixr=1 --minn=300000
