@@ -1,6 +1,6 @@
 # 區間前綴最小值 (rpmq)
 
-This problem is used in IONC 2023 Day3 Practice Contest.
+IONC 2023 Practice Problem (Original)
 
 ## Problem Statement
 
